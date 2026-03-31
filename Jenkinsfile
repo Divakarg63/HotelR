@@ -47,7 +47,7 @@ pipeline {
             steps {
                 sh '''
                 docker rm -f hotelr-container || true
-                docker run -d -p 3002:80 --name hotelr-container $IMAGE_NAME:$TAG
+                docker run -d -p 3003:80 --name hotelr-container $IMAGE_NAME:$TAG
                 '''
             }
         }
